@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "621e186f06feca17dc76efa8"
+  },
+  "name": "Dell",
+  "slug": "Dell-W_DmGQ3BRv",
+  "categoryImage": "/uploads/id5EWhiy0-800-200-800x200-15.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "621e189d06feca17dc76efac"
+  },
+  "name": "Asus",
+  "slug": "Asus-e-XojdX6Es",
+  "categoryImage": "/uploads/bGc5OqVU--800-200-800x200-13.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "621e18b306feca17dc76efb0"
+  },
+  "name": "Lenovo",
+  "slug": "Lenovo-b4HsAbj9D7",
+  "categoryImage": "/uploads/c_pK6TmL3-800-200-800x200-168.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "621e18ec06feca17dc76efbe"
+  },
+  "name": "Acer",
+  "slug": "Acer-qXqdxgWExP",
+  "categoryImage": "/uploads/LvDPfIZxJ-800-200-800x200-166.png",
+  "__v": 0
+}]

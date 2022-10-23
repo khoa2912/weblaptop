@@ -1,0 +1,825 @@
+.delAdrContainer{
+    display: flex;
+    box-sizing: border-box;
+}
+.delTitle{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.delName{
+    font-size: 12px;
+    font-weight: 500;
+}
+.delAddress{
+    font-size: 12px;
+    margin: 10px 0;
+}
+.delPhoneNumber{
+    font-size: 12px;
+    font-weight: 500;
+}
+.delAdrDetails{
+    padding: 20px;
+    border-right: 1px solid #eee;
+}
+.delMoreActionContainer{
+    padding: 20px;
+}
+
+.delItemImgContainer{
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    text-align: center;
+}
+.delItemImgContainer > img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.orderTrack{
+    width: 400px;
+    display: flex;
+}
+.orderStatus{
+    width: 33.33%;
+    height: 3px;
+    background: #777;
+    position: relative;
+    font-size: 12px;
+}
+.orderStatus.active{
+    background: #26A541;
+}
+.orderStatus:last-child{
+    width: 0;
+}
+.orderStatus .point{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #777;
+    top: -3px;
+}
+.orderStatus .point.active{
+    background-color: #26A541;
+}
+.orderInfo{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: -26px;
+    transform: translateX(-50%);
+}
+
+.delItemName{
+    font-size: 12px;
+}
+
+.orderInfo .status{
+    color: #26A541;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.orderInfo .date{
+    font-size: 10px;
+}
+.app__orders-detail-wrap {
+    margin-top: 40px;
+    padding: 20px 20px 40px;
+    background-color: rgb(235, 248, 255);
+}
+
+.app__orders-detail {
+    width: 1190px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.ant-steps-item-title{
+    margin-top: 5px;
+}
+
+.app__orders-detail-header {
+    background-color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 20px 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-address-title,
+.header-method--title {
+    font-size: 1.8rem;
+    color: rgb(51, 51, 51);
+}
+
+.header-address--name,
+.header-method--detail {
+    font-size: 1.4rem;
+    color: rgb(51, 51, 51);
+    margin-top: 15px;
+}
+
+.header-address--detail {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.header-address--phone {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* .header-method--title {
+    color: rgb(0, 132, 255);
+} */
+
+.header-method--detail {
+    color: rgba(0, 132, 255, 0.7);
+    text-align: right;
+}
+
+/* CSS app__orders-detail-body */
+.app__orders-detail-body {
+    margin-top: 30px;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.app__orders-detail-body-info {
+    
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.detail-body-info--orders {
+    display: flex;
+    align-items: center;
+   width: 100%;
+}
+
+.detail-body-info--orders-img img {
+    width: 140px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.detail-body-info--orders-wrap {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.detail-body-info--orders-name {
+   color: black;
+    line-height: 1.9rem;
+    margin-bottom: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height: 6rem;
+    overflow: hidden;
+}
+
+.detail-body-info--orders-title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgb(241, 87, 26);
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+/* CSS chi tiết đơn hàng */
+.app__orders-detail-body-extend {
+    /* display: none; */
+}
+
+/* CSS unconfirm*/
+.detail-body-extend-unconfirm {
+    background-color: rgba(0, 0, 0, 0.01);
+    padding-top: 40px;
+    display: flex;
+    display: none;
+}
+
+.graph__detail {
+    position: relative;
+    width: 4px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 72px;
+    top: 0;
+}
+
+.graph__detail-node-1 {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -209px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-2 {
+    position: relative;
+    background-color: rgb(199, 199, 199);
+    top: -150px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-3 {
+    position: relative;
+    background-color: rgb(199, 199, 199);
+    top: -88px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-4 {
+    position: relative;
+    background-color: rgb(199, 199, 199);
+    top: -31px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/* CSS time__orders */
+.time__orders {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.time__orders-1,
+.time__orders-2,
+.time__orders-3,
+.time__orders-4 {
+    position: relative;
+    left: 40px;
+    text-align: center;
+}
+
+.time__orders-1 {
+    top: -9px;
+}
+
+.time__orders-2 {
+    top: 43px;
+}
+
+.time__orders-3 {
+    top: 100px;
+}
+
+.time__orders-4 {
+    top: 150px;
+}
+
+.graph__detail-real {
+    position: relative;
+    width: 4px;
+    height: 0px; 
+    /* height: 0 - 60 - 133 - 200*/
+    background-color: rgb(115, 219, 137);
+    left: 62px;
+}
+
+/* CSS status__orders-detail */
+.status__orders-detail {
+    font-size: 1.5rem;
+    color: rgb(214, 214, 214);
+    font-weight: 300;
+}
+
+.status__orders-detail-1,
+.status__orders-detail-2,
+.status__orders-detail-3,
+.status__orders-detail-4 {
+    position: relative;
+    left: 95px;
+}
+
+.status__orders-detail-1 {
+    top: -10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status__orders-detail-2 {
+    top: 40px;
+}
+
+.status__orders-detail-3 {
+    top: 94px;
+}
+
+.status__orders-detail-4 {
+    top: 143px;
+}
+
+/* CSS detail-body-extend-pack */
+.detail-body-extend-pack {
+    background-color: rgba(0, 0, 0, 0.01);
+    padding-top: 40px;
+    display: flex;
+    display: none;
+}
+
+.graph__detail-pack {
+    position: relative;
+    width: 4px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 72px;
+    top: 0;
+}
+
+.graph__detail-node-1-pack {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -209px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-2-pack {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -150px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-3-pack {
+    position: relative;
+    background-color: rgb(199, 199, 199);
+    top: -88px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-4-pack {
+    position: relative;
+    background-color: rgb(199, 199, 199);
+    top: -31px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/* CSS time__orders */
+.time__orders-pack {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.time__orders-1-pack,
+.time__orders-2-pack,
+.time__orders-3-pack,
+.time__orders-4-pack {
+    position: relative;
+    left: 40px;
+    text-align: center;
+}
+
+.time__orders-1-pack {
+    top: -9px;
+}
+
+.time__orders-2-pack {
+    top: 43px;
+}
+
+.time__orders-3-pack {
+    top: 100px;
+}
+
+.time__orders-4-pack {
+    top: 150px;
+}
+
+.graph__detail-real-pack {
+    position: relative;
+    width: 4px;
+    height: 60px; 
+    /* height: 0 - 60 - 133 - 200*/
+    background-color: rgb(115, 219, 137);
+    left: 62px;
+}
+
+/* CSS status__orders-detail */
+.status__orders-detail-pack {
+    font-size: 1.5rem;
+    color: rgb(214, 214, 214);
+    font-weight: 300;
+}
+
+.status__orders-detail-1-pack,
+.status__orders-detail-2-pack,
+.status__orders-detail-3-pack,
+.status__orders-detail-4-pack {
+    position: relative;
+    left: 95px;
+}
+
+.status__orders-detail-1-pack {
+    top: -10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status__orders-detail-2-pack {
+    top: 40px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status__orders-detail-3-pack {
+    top: 94px;
+}
+
+.status__orders-detail-4-pack {
+    top: 143px;
+}
+
+/* CSS detail-body-extend-delivery */
+.detail-body-extend-delivery {
+    background-color: rgba(0, 0, 0, 0.01);
+    padding-top: 40px;
+    display: flex;
+    display: none;
+}
+
+.graph__detail-delivery {
+    position: relative;
+    width: 4px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 72px;
+    top: 0;
+}
+
+.graph__detail-node-1-delivery {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -209px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-2-delivery {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -150px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-3-delivery {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -88px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-4-delivery {
+    position: relative;
+    background-color: rgb(199, 199, 199);
+    top: -31px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/* CSS time__orders */
+.time__orders-delivery {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.time__orders-1-delivery,
+.time__orders-2-delivery,
+.time__orders-3-delivery,
+.time__orders-4-delivery {
+    position: relative;
+    left: 40px;
+    text-align: center;
+}
+
+.time__orders-1-delivery {
+    top: -9px;
+}
+
+.time__orders-2-delivery {
+    top: 43px;
+}
+
+.time__orders-3-delivery {
+    top: 100px;
+}
+
+.time__orders-4-delivery {
+    top: 150px;
+}
+
+.graph__detail-real-delivery {
+    position: relative;
+    width: 4px;
+    height: 133px; 
+    /* height: 0 - 60 - 133 - 200*/
+    background-color: rgb(115, 219, 137);
+    left: 62px;
+}
+
+/* CSS status__orders-detail */
+.status__orders-detail-delivery {
+    font-size: 1.5rem;
+    color: rgb(214, 214, 214);
+    font-weight: 300;
+}
+
+.status__orders-detail-1-delivery,
+.status__orders-detail-2-delivery,
+.status__orders-detail-3-delivery,
+.status__orders-detail-4-delivery {
+    position: relative;
+    left: 95px;
+}
+
+.status__orders-detail-1-delivery {
+    top: -10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status__orders-detail-2-delivery {
+    top: 40px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status__orders-detail-3-delivery {
+    top: 94px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status__orders-detail-4-delivery {
+    top: 143px;
+}
+
+/* CSS detail-body-extend-finish */
+.detail-body-extend-finish {
+    background-color: rgba(0, 0, 0, 0.01);
+    padding-top: 40px;
+    display: flex;
+    /* display: none; */
+}
+
+.graph__detail-finish {
+    position: relative;
+    width: 4px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.1);
+    left: 72px;
+    top: 0;
+}
+
+.graph__detail-node-1-finish {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -209px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-2-finish {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -150px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-3-finish {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -88px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.graph__detail-node-4-finish {
+    position: relative;
+    background-color: rgb(115, 219, 137);
+    top: -31px;
+    left: 69px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/* CSS time__orders */
+.time__orders-finish {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.time__orders-1-finish,
+.time__orders-2-finish,
+.time__orders-3-finish,
+.time__orders-4-finish {
+    position: relative;
+    left: 40px;
+    text-align: center;
+}
+
+.time__orders-1-finish {
+    top: -9px;
+}
+
+.time__orders-2-finish {
+    top: 43px;
+}
+
+.time__orders-3-finish {
+    top: 100px;
+}
+
+.time__orders-4-finish {
+    top: 150px;
+}
+
+.graph__detail-real-finish {
+    position: relative;
+    width: 4px;
+    height: 200px; 
+    /* height: 0 - 60 - 133 - 200*/
+    background-color: rgb(115, 219, 137);
+    left: 62px;
+}
+
+/* CSS status__orders-detail */
+.status__orders-detail-finish {
+    font-size: 1.5rem;
+    color: rgb(214, 214, 214);
+    font-weight: 300;
+}
+
+.status__orders-detail-1-finish,
+.status__orders-detail-2-finish,
+.status__orders-detail-3-finish,
+.status__orders-detail-4-finish {
+    position: relative;
+    left: 95px;
+}
+
+.status__orders-detail-1-finish {
+    top: -10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status__orders-detail-2-finish {
+    top: 40px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status__orders-detail-3-finish {
+    top: 94px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.status__orders-detail-4-finish {
+    top: 143px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.app__orders-detail-footer {
+    margin-top: 0;
+    display: flex;
+}
+
+.detail-footer-3 {
+    width: 30%;
+}
+
+.detail-footer-7 {
+    width: 70%;
+}
+
+.show__table-info {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+    background-color: var(--white-color);
+}
+
+.table__row-info {
+    height: 5.6rem;
+    max-height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 1.6rem;
+}
+
+.table__row-field-title {
+    width: 50%;
+    line-height: 5.6rem;
+    padding-right: 14px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.table__row-info .table__row-field-first {
+    border-top: none;
+    color: black;
+}
+
+.table__row-field-value {
+    width: 50%;
+    line-height: 5.6rem;
+    text-align: right;
+    padding-right: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: 400;
+}
+
+.table__row-field-title i {
+    color: rgba(0, 0, 0, 0.37);
+    margin-left: 5px;
+    font-size: 1.5rem;
+    top: 0.6px;
+    position: relative;
+}
+
+.table__row-field-title .icon__table-row-method {
+    color: rgb(247, 69, 25);
+    margin-right: 7px;
+}
+
+.table__row-info .table__row-field-value-bold {
+    font-size: 2rem;
+    color: black;
+}
+
+.table__row-info-bold {
+    height: 8rem;
+}

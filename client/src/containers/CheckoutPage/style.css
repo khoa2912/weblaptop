@@ -1,0 +1,1028 @@
+.checkoutContainer{
+    width: calc(100% - 400px);
+}
+.checkoutStep{
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+.checkoutHeader{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.checkoutHeader.active{
+    background: #2874f0;
+}
+.checkoutHeader .stepNumber{
+    display: inline-block;
+    text-align: center;
+    background: #eee;
+    color: #2874f0;
+    border-radius: 3px;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 3px 7px;
+}
+.checkoutHeader.active .stepNumber{
+    background: #fff;
+}
+.stepTitle{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #878787;
+    margin-left: 15px;
+}
+.checkoutHeader.active .stepTitle{
+    color: #fff;
+}
+.loggedInId{
+    font-size: 12px;
+    margin: 0px 0 10px 60px;
+}
+
+.addressContainer{
+    box-sizing: border-box;
+    padding: 20px;
+    background: #f5faff;
+}
+.addressinfo{
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.addressDetail{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    font-size: 12px;
+    color: #333;
+}
+.addressType{
+    display: inline-block;
+    margin: 0 10px;
+    text-transform: uppercase;
+    background: #eee;
+    font-weight: 500;
+    padding: 1px 5px;
+    font-size: 10px;
+    border-radius: 2px;
+    color: #777777;
+}
+.fullAddress{
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+.stepCompleted{
+    padding: 0 0 20px 60px;
+    font-size: 12px;
+}
+
+/* CSS header page payment */
+.payment__header {
+    height: var(--height-header);
+    background-image: linear-gradient(0, rgb(55, 182, 255), #1381ff);
+}
+
+.header__navbar-payment-wrap {
+    background-color: linear-gradient(0, rgb(55, 182, 255), #1381ff);
+    height: 30%;
+}
+
+.header__navbar-payment {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__search-payment {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-icon-header--payment,
+.logo-name--payment {
+    color: var(--primary-color);
+}
+
+.header__search-payment-wrap {
+    background-color: var(--white-color);
+    height: calc(100% - 30%);
+    padding-top: 10px;
+    border-bottom: 0.6px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+}
+
+.header__logo-payment {
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.backhome__with-logo-payment {
+    margin-right: -10px;
+}
+
+.nav__payment-item-title {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    padding-left: 10px;
+    border-left: 1px solid var(--primary-color);
+}
+
+.header__logo-payment a {
+    width: 220px;
+}
+
+.header__search-payment-input {
+    border: 2px solid var(--primary-color);
+    width: 500px;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+/* CSS Phần Content */
+.payment__content {
+    background-color: rgb(235, 248, 255);
+    padding: 25px 0px 15px;
+}
+.payment__content-wrap {
+
+    margin: 10px;
+    display: flex;
+}
+
+.payment__method-address {
+    width: 100%;
+    margin-right: 20px;
+}
+
+/* CSS payment__address-wrap */
+.payment__address-wrap {
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 20px 0 0px 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+}
+
+.payment__address-titel-wrap {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px inset;
+}
+
+.receive-at-home {
+    font-weight: 500;
+    color: rgb(41, 116, 212);
+    box-shadow: rgb(41, 116, 212) 0px -2px 0px inset;
+    padding: 0 20px;
+    height: 2.4rem;
+}
+.receive-at-home:hover{
+    cursor: pointer;
+}
+.receive-at-shop {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
+    height: 2.4rem;
+}
+
+.receive__info-wrap {
+    padding: 15px 10px; 
+}
+
+.receive__info-title {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.receive__address-add-wrap {
+    display: flex;
+    align-items: center;
+    /* margin-left: 12px; */
+    margin-right: 20px;
+}
+
+/* CSS địa chỉ */
+.receive__address-active-current {
+    width: 30%;
+    border: 1px solid rgb(59, 59, 255);
+    padding: 10px 20px;
+    margin-right: 10px;
+    height: 120px;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* .receive__address-active-current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: -1px;
+    top: -1px;
+    border-style: solid;
+    border-width: 0px 30px 30px 0px;
+    border-color: transparent rgb(59, 59, 255) transparent transparent;
+    overflow: hidden;
+} */
+
+.receive__name-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.receive__name-wrap-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.receive__name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-right: 5px;
+}
+
+.receive__edit-name-icon i {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.icon__active-when-click i {
+    color: var(--white-color);
+    position: relative;
+    right: -18px;
+    top: -10px;
+    font-size: 0.9rem;
+    z-index: 3;
+}
+
+.receive__phone,
+.receive__address-detail {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 4px;
+    display: block;
+}
+
+.receive__address-detail {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 3.4rem;
+    overflow: hidden;
+}
+
+/* CSS Thêm mới địa chỉ*/
+.receive__address-addnew {
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin-left: 10px;
+    height: 120px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* CSS icon */
+.addnew__add-icon {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 2px;
+}
+
+.addnew__add-title {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+}
+
+.delivery__method-title {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.delivery__method-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--blue-color);
+    font-size: 1.3rem;
+}
+
+.delivery__title-free {
+    display: block;
+    color: rgb(39, 150, 5);
+    margin-right: 20px;
+}
+
+/* CSS Nhập thông tin ghi chú */
+.note__for-orders {
+    width: 100%;
+    background-color: var(--white-color);
+    margin-top: 20px;
+    height: 10.3rem;
+    padding: 15px 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+}
+
+.note__for-orders-title {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+.note__for-orders-input-wrap {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.note__for-orders-input {
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+.note__for-orders-input:focus {
+    border: 1px solid var(--blue-color);
+}
+
+/* CSS phương thức thanh toán */
+.payment__method-wrap {
+    max-width: 100%;
+    width: 60%;
+    background-color: var(--white-color);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+}
+
+.title__payment-method {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.title-info__payment-method {
+    margin-top: 3px;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.wrap__payment-method {
+    display: flex;
+    height: 100px;
+    /* padding: 0 5px 0 20px; */
+}
+
+.payment__method-banking,
+.payment__method-momo,
+.payment__method-at-home { 
+    width: 33.3333%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 1px solid var(--blue-color);
+    margin-right: 15px;
+    position: relative;
+    height: 90px;
+}
+
+.payment__method-banking::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: -1px;
+    top: -1px;
+    border-style: solid;
+    border-width: 0px 25px 25px 0px;
+    border-color: transparent rgb(59, 59, 255) transparent transparent;
+    overflow: hidden;
+}
+
+.payment__method-banking-title,
+.payment__method-momo-title,
+.payment__method-at-home-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.payment__method-momo-note,
+.payment__method-momo-note,
+.payment__method-at-home-note {
+    font-size: 1.1rem;
+
+    font-weight: 400;
+}
+
+.icon__click-method i {
+    color: var(--white-color);
+    position: relative;
+    right: -18px;
+    top: -17px;
+    font-size: 0.8rem;
+    z-index: 3;
+}
+
+.payment__method-momo {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.payment__method-at-home-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment__method-at-home {
+    margin-right: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* CSS Danh sách sản phẩm */
+.payment__list-item {
+}
+
+.payment__list-item-inf {
+    background-color: var(--white-color);
+    padding: 20px 20px 0px 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+    margin: 10px;
+}
+
+.inf__orders-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.inf__orders-edit {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--blue-color);
+    font-weight: 300;
+}
+
+.list__orders {
+    list-style: none;
+    padding: 0;
+    /* height: 300px;
+    overflow-y: scroll; */
+}
+
+.private__orders {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.img__private-orders {
+    display: block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    margin-right: 16px;
+    
+}
+
+.img__private-orders img {
+    height: 65px;
+    object-fit: contain;
+    width: 77px;
+}
+
+.title__private-orders {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgb(67, 70, 87);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 3.4rem;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.title__private-orders:hover {
+    color: var(--blue-color);
+    cursor: pointer;
+}
+
+.quantity__private-orders-wrap {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    color: rgb(132, 135, 136);
+    font-weight: 300;
+}
+
+.price__private-orders-new {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.price__private-orders-old {
+    color: rgb(130, 134, 158);
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+/* CSS Phần hỗ trợ kỹ thuật */
+.support__service-wrap {
+    width: 100%;
+    background-color: var(--white-color);
+    padding: 20px 20px 0px 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+    margin-top: 20px;
+}
+
+.support__service { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.support__service-click {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.support__service-click-icon i {
+    margin-right: 6px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+    display: none;
+}
+
+.support__service-click-icon--active i {
+    color: var(--blue-color);
+    display: block;
+}
+
+.support__service-free {
+    font-size: 1.2rem;
+    color: rgb(39, 150, 5);
+}
+
+.support__service-note {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: rgb(85, 87, 100);
+    padding-bottom: 15px;
+}
+
+/* CSS Đặt hàng */
+.sum__payment-wrap {
+    width: 40%;
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+    margin: 10px;
+}
+
+.sum__price-wrap,
+.ship__price-wrap,
+.real__price-wrap {
+    display: flex;
+    font-size: 1.4rem;
+    color: rgb(132, 135, 136);
+    justify-content: space-between;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.sum__price,
+.ship__price {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.real__price {
+    font-weight: 500;
+    color: rgb(60, 112, 255);
+    font-size: 1.8rem;
+}
+
+.note__vat {
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgb(132, 135, 136);
+    margin-bottom: 20px;
+}
+
+.btn__payment {
+    width: 100%;
+}
+
+.sum__payment-wrap .btn__payment {
+    font-size: 1.8rem;
+}
+
+/* CSS modal hiển thị form nhập địa chỉ */
+#modal__payment {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    animation: fadeIn linear 0.1s;
+    z-index: 5;
+    display: none;
+}
+
+#modal__overlay-payment {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 5;
+}
+
+#modal__overlay-payment-bold {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+.modal__body-payment {
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: auto;
+    z-index: 5;
+    /* animation: growth linear 0.1s; */
+}
+
+.show__input-address {
+    width: 600px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    z-index: 5;
+    /* display: none; */
+    padding: 20px 20px 30px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    max-height: 670px;
+    /* max-height: 800px; */
+    /* overflow-y: scroll; */
+}
+
+.show__address-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 5px 0 0;
+}
+
+.input__info-name-title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(67, 70, 87);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input__info-name {
+    width: 100%;
+    height: 3.4rem;
+    padding-left: 10px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.wrap__phone-and-email {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(67, 70, 87);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.wrap__phone-inf {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.input__info-email,
+.input__info-phone {
+    margin-top: 7px;
+    width: 100%;
+    height: 3.4rem;
+    padding-left: 10px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.wrap__email-inf {
+    width: 50%;
+}
+
+.wrap__address-detail {
+    margin-top: 18px;
+    display: inline-flex;
+    width: 100%;
+}
+
+.wrap__city-inf,
+.wrap__commune-inf {
+    width: 50%;
+    position: relative;
+}
+
+.wrap__district-inf,
+.wrap__exact-inf {
+    width: 50%;
+    margin-left: 20px;
+    position: relative;
+}
+
+.choose__info-city-title,
+.choose__info-district-title,
+.choose__info-commune-title,
+.choose__info-exact-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgb(67, 70, 87);
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+
+/* CSS icon down */
+.gg-chevron-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-down::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 4px
+}
+
+#choose__info-city,
+.choose__info-district,
+.choose__info-commune {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px;
+    width: 100%;
+    height: 3.4rem;
+    padding: 0 10px;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 300;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.choose__info-city:active,
+.choose__info-district:active,
+.choose__info-commune:active {
+    border: 1px solid var(--blue-color);
+}
+
+/* Click thì display: block */
+.chevron__icon-up {
+    display: none;
+    /* display: block; */
+}
+
+/* CSS icon up */
+.gg-chevron-up {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-up::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(-45deg);
+    left: 4px;
+    bottom: 2px
+}
+
+/* CSS địa chỉ cụ thể */
+.input__info-exact {
+    width: 100%;
+    height: 3.4rem;
+    padding-left: 10px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+/* CSS chọn default */
+.set__default-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: rgb(51, 51, 51);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.set__default-click-icon i {
+    margin-right: 6px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+    /* display: none; */
+}
+
+.set__default-click-icon--active i {
+    color: var(--blue-color);
+    /* display: block; */
+    display: none;
+}
+
+/* CSS btn */
+.save__address-wrap {
+    display: flex;
+    justify-content: right;
+}
+
+.save__address-wrap .btn__cancel-address {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.save__address-wrap .btn__save-address {
+    font-size: 1.5rem;
+}
+
+/* Show form khi click địa chỉ */
+#show__address--city,
+#show__address--district {
+    background-color: var(--white-color);
+    border-radius: 2px;
+    box-shadow: 0 1px 2rem rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    margin-top: 6px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Test show form */
+#show__address--district {
+    /* display: block; */
+    display: none;
+}
+
+.show__address-input-city,
+.show__address-input-district,
+.show__address-input-commune {
+    outline: none;
+    border: none;
+    background-color: #f5f5f5;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 3rem;
+    padding: 3px 10px;
+    border-radius: 2px;
+    color: var(--text-color);  
+}
+
+.show__address-city-list,
+.show__address-district-list,
+.show__address-commune-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 5px 10px 1px;
+    height: 160px;
+    overflow-y: scroll;
+}
+
+.show__address-city-item,
+.show__address-district-item,
+.show__address-commune-item {
+    height: 34px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.show__address-city-item:hover,
+.show__address-district-item:hover,
+.show__address-commune-item:hover {
+    color: var(--primary-color);
+}
+
+#show__address--commune {
+    background-color: var(--white-color);
+    border-radius: 2px;
+    box-shadow: 0 1px 2rem rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    margin-top: -260px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 5;
+}

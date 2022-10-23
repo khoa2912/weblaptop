@@ -1,0 +1,166 @@
+   
+.caContainer{
+    width: 250px;
+}
+.caImgContainer{
+    width: 240px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.caImgContainer > img{
+    max-width: 100%;
+    max-height: 300px;
+}
+.caProductName{
+    font-size: 12px;
+    padding: 10px 0;
+}
+.caProductPrice{
+    font-size: 12px;
+    font-weight: 600;
+}
+.trademark__app-wrap {
+    padding: 20px 20px 40px;
+    background-color: rgb(235, 248, 255);
+}
+
+.trademark__app {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.banner__img-wrap {
+    width: 100%;
+    padding: 20px 30px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.banner__img-wrap img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.trademark__app-content {
+    background-color: var(--white-color);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+
+.trademark__app-content-list {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.trademark__app-content-item {
+    width: calc(20% - 16px);
+    margin: 0 8px 16px;
+    padding: 0 10px 15px;
+    cursor: pointer;
+    border: 0.5px solid rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+}
+
+.trademark__app-content-item:hover {
+    box-shadow: 0 0 3px 0 hsl(0deg 0% 30% / 30%);
+}
+
+.item__product-img-wrap {
+    height: 195px;
+    width: 100%;
+}
+
+.item__product-img-wrap img {
+    height: 90%;
+    object-fit: contain;
+    width: 100%;
+}
+
+/* CSS item__product-info */
+.item__product-info {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: 300;
+}
+
+.item__product-info-name {
+    font-size: 14px;
+    color: black;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.8rem;
+    max-height: 4rem;
+    overflow: hidden;
+}
+
+.item__product-info-quantity {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 141, 65);
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 7px;
+}
+
+.item__product-info-quantity span {
+    margin: 0 2.3px;
+}
+
+.item__product-info-price {
+    display: flex;
+    font-size: 1.35rem;
+    font-weight: 300;
+    color: var(--blue-color);
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item__product-info-price-old {
+    font-size: 1.13rem;
+    text-decoration:line-through;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+/* CSS chuyển trang */
+.nav__change-page-trademark {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.change-page-trademark-item {
+    margin-left: 15px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.66);
+    padding: 6px 13px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}
+
+.change-page-trademark-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.change-page-trademark-item-active {
+    background-color: rgba(55, 182, 255, 0.8);
+    color: var(--white-color);
+}
+
+.change-page-trademark-item-active:hover {
+    background-color: rgba(55, 182, 255, 1) !important;
+}

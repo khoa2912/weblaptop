@@ -1,0 +1,159 @@
+<form
+    class='mt-4'
+    name='container-form'
+    method='POST'
+    action='/phone/handle-form-trash-actions'
+>
+    <div>
+        <h3>Điện Thoại Đã Xóa</h3>
+        <a href='/me/stored/phone'>Danh Sách Điện Thoại</a>
+        <div class='mt-4 d-flex align-items-center'>
+            <div class='form-check'>
+                <input
+                    class='form-check-input'
+                    type='checkbox'
+                    value=''
+                    id='checkbox-all'
+                />
+                <label class='form-check-label' for='checkbox-all'>
+                    Chọn tất cả
+                </label>
+            </div>
+            <select
+                class='custom-select mr-sm-2 checkbox-select-all-options'
+                name='action'
+                required
+            >
+                <option value=''>-- Hành Động --</option>
+                <option value='restore'>Khôi Phục</option>
+                <option value='delete'>Xóa Vĩnh Viễn</option>
+            </select>
+            <button
+                class='btn disabled btn-primary btn-submit-checkbox btn-sm'
+            >Thực hiện</button>
+        </div>
+    </div>
+    <table class='table mt-4'>
+        <thead>
+            <tr>
+                <th scope='col'></th>
+                <th scope='col'>STT</th>
+                <th scope='col'>Tên Điện Thoại</th>
+                <th scope='col'>Giá</th>
+                <th scope='col'>Link Hình Ảnh</th>
+                <th scope='col'></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each phones}}
+                <tr>
+                    <td>
+                        <div class='form-check'>
+                            <input
+                                class='form-check-input'
+                                type='checkbox'
+                                name='phoneIds[]'
+                                value='{{this._id}}'
+                            />
+                        </div>
+                    </td>
+                    <th scope='row'>{{sum @index 1}}</th>
+                    <td>{{this.ten}}</td>
+                    <td>{{this.gia}}</td>
+                    <td>{{this.image}}</td>
+                    <td>
+                        <a
+                            href=''
+                            class='btn btn-link btn-restore'
+                            data-id='{{this._id}}'
+                        >Khôi Phục</a>
+                        <a
+                            href=''
+                            class='btn btn-link'
+                            data-toggle='modal'
+                            data-id='{{this._id}}'
+                            data-target='#delete-phone-modal'
+                        >Xóa Vĩnh Viễn</a>
+                    </td>
+                </tr>
+            {{else}}
+                <tr>
+                    <td colspan='5' class='text-center'>
+                        Thùng rác trống.
+                        <a href='/me/stored/phone'>Danh Sách Khóa Học</a>
+                    </td>
+                </tr>
+
+            {{/each}}
+        </tbody>
+    </table>
+</form>
+{{!Confirm delete phone}}
+<div id='delete-phone-modal' class='modal' tabindex='-1' role='dialog'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header'>
+                <h5 class='modal-title'>Xóa Điện Thoại</h5>
+                <button
+                    type='button'
+                    class='close'
+                    data-dismiss='modal'
+                    aria-label='Close'
+                >
+                    <span aria-hidden='true'>&times;</span>
+                </button>
+            </div>
+            <div class='modal-body'>
+                <p>Bạn có chắc chắn muốn xóa ?</p>
+            </div>
+            <div class='modal-footer'>
+                <button
+                    id='btn-delete-phone'
+                    type='button'
+                    class='btn btn-danger'
+                >Xóa Vĩnh Viễn</button>
+                <button
+                    type='button'
+                    class='btn btn-secondary'
+                    data-dismiss='modal'
+                >Trở Về</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form name='delete-phone-form' method='POST'></form>
+<form name='restore-phone-form' method='POST'></form>
+<script>
+
+    document.addEventListener('DOMContentLoaded',function(){ var PhoneId; var
+    deleteForm=document.forms['delete-phone-form'] var
+    restoreForm=document.forms['restore-phone-form'] var
+    bthDeletePhone=document.getElementById('btn-delete-phone') var
+    btnCheckboxAll=$('#checkbox-all') var
+    phoneItemCheckbox=$('input[name="phoneIds[]"]') var
+    checkAllSubmitBtn=$('.btn-submit-checkbox') var
+    containerForm=document.forms['container-form'] var
+    restoreBtn=$('.btn-restore') //When dialog confirm clicked
+    $('#delete-phone-modal').on('show.bs.modal', function (event) { var button =
+    $(event.relatedTarget) // Button that triggered the modal PhoneId=
+    button.data('id') //console.log(PhoneId) }) // When delete course btn
+    clicked bthDeletePhone.onclick=function(){ //console.log(PhoneId)
+    deleteForm.action='/phone/'+PhoneId+'/force/?_method=DELETE';
+    deleteForm.submit() } // Restore btn clicked restoreBtn.click(function(e){
+    e.preventDefault() var PhoneId=$(this).data('id'); //console.log(phoneId)
+    restoreForm.action='/phone/'+PhoneId+'/restore/?_method=PATCH';
+    restoreForm.submit() }) //checkbox all click
+    btnCheckboxAll.change(function(){ var isCheckedAll=$(this).prop('checked')
+    phoneItemCheckbox.prop('checked',isCheckedAll) renderCheckAllSubmitBtn() })
+    //Phone item checkbox clicked phoneItemCheckbox.change(function(){ var
+    isCheckedAll=phoneItemCheckbox.length===$('input[name="phoneIds[]"]:checked').length
+    btnCheckboxAll.prop('checked',isCheckedAll) renderCheckAllSubmitBtn() })
+    //check all submit button clicked checkAllSubmitBtn.on('submit',function(e){
+    var isSubmittable=$(this).hasClass('disabled') if(isSubmittable) {
+    e.preventDefault() } }) // Re-render check all submit button function
+    renderCheckAllSubmitBtn(){ var
+    checkedCount=$('input[name="phoneIds[]"]:checked').length if(checkedCount){
+    checkAllSubmitBtn.removeClass('disabled') } else {
+    checkAllSubmitBtn.addClass('disabled') } } })
+</script>

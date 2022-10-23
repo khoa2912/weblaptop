@@ -1,0 +1,70 @@
+{
+  "name": "client-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@draft-js-plugins/editor": "^4.1.3",
+    "@draft-js-plugins/image": "^4.1.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@fontsource/roboto": "^4.5.7",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.7",
+    "@mui/styles": "^5.8.7",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "alloyeditor": "^2.14.6",
+    "alloyeditor-react-component": "^1.1.0",
+    "ant-design": "^1.0.0",
+    "antd": "^4.21.3",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.1.0",
+    "ckeditor4-react": "^3.1.0",
+    "draft-convert": "^2.1.12",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "mdbreact": "^4.6.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-calendar": "^3.6.0",
+    "react-chartjs-2": "^4.0.1",
+    "react-checkbox-tree": "^1.7.2",
+    "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-icons": "^4.2.0",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.1",
+    "react-scripts": "^5.0.0",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "sweetalert": "^2.1.2",
+    "typeface-roboto": "^1.1.13",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "set PORT=3006 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

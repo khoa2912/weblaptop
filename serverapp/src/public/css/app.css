@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    font: 14px/18px Arial, Helvetica, sans-serif;
+    color: #333;
+    outline: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}

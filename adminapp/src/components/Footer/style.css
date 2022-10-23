@@ -1,0 +1,15 @@
+.main-footer {
+    color: white;
+    background-color: #dc3545;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+  }
+  .row{
+    flex:1;
+  }
+  .main-footer p{
+      text-align: center;
+  }

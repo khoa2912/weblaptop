@@ -1,0 +1,208 @@
+[{
+  "_id": {
+    "$oid": "62c1632362aea62e848be44f"
+  },
+  "addressId": {
+    "$oid": "62c15c4a62aea62e848be445"
+  },
+  "totalAmount": 236450000,
+  "items": [
+    {
+      "_id": {
+        "$oid": "62c1632362aea62e848be450"
+      },
+      "productId": {
+        "$oid": "621e221306feca17dc76efff"
+      },
+      "purchasedQty": 1
+    },
+    {
+      "_id": {
+        "$oid": "62c1632362aea62e848be451"
+      },
+      "productId": {
+        "$oid": "621e1e7406feca17dc76efee"
+      },
+      "purchasedQty": 1
+    },
+    {
+      "_id": {
+        "$oid": "62c1632362aea62e848be452"
+      },
+      "productId": {
+        "$oid": "62aedc5786299116dc23aa42"
+      },
+      "purchasedQty": 1
+    },
+    {
+      "_id": {
+        "$oid": "62c1632362aea62e848be453"
+      },
+      "productId": {
+        "$oid": "62aef2bc86299116dc23aded"
+      },
+      "purchasedQty": 2
+    }
+  ],
+  "paymentStatus": "pending",
+  "paymentType": "cod",
+  "user": {
+    "$oid": "622387a8aa16cb358c2e4ad6"
+  },
+  "orderStatus": [
+    {
+      "type": "ordered",
+      "isCompleted": true,
+      "_id": {
+        "$oid": "62c1632362aea62e848be454"
+      },
+      "date": {
+        "$date": {
+          "$numberLong": "1656840995643"
+        }
+      }
+    },
+    {
+      "type": "packed",
+      "isCompleted": false,
+      "_id": {
+        "$oid": "62c1632362aea62e848be455"
+      }
+    },
+    {
+      "type": "shipped",
+      "isCompleted": false,
+      "_id": {
+        "$oid": "62c1632362aea62e848be456"
+      }
+    },
+    {
+      "type": "delivered",
+      "isCompleted": false,
+      "_id": {
+        "$oid": "62c1632362aea62e848be457"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c16391299d11386857a8c4"
+  },
+  "addressId": {
+    "$oid": "62c15c4a62aea62e848be445"
+  },
+  "totalAmount": 35890000,
+  "items": [
+    {
+      "_id": {
+        "$oid": "62c16391299d11386857a8c5"
+      },
+      "productId": {
+        "$oid": "622ee784108f1617806b34e9"
+      },
+      "purchasedQty": 1
+    }
+  ],
+  "paymentStatus": "pending",
+  "paymentType": "cod",
+  "user": {
+    "$oid": "622387a8aa16cb358c2e4ad6"
+  },
+  "orderStatus": [
+    {
+      "type": "ordered",
+      "isCompleted": true,
+      "_id": {
+        "$oid": "62c16391299d11386857a8c6"
+      },
+      "date": {
+        "$date": {
+          "$numberLong": "1656841105246"
+        }
+      }
+    },
+    {
+      "type": "packed",
+      "isCompleted": false,
+      "_id": {
+        "$oid": "62c16391299d11386857a8c7"
+      }
+    },
+    {
+      "type": "shipped",
+      "isCompleted": false,
+      "_id": {
+        "$oid": "62c16391299d11386857a8c8"
+      }
+    },
+    {
+      "type": "delivered",
+      "isCompleted": false,
+      "_id": {
+        "$oid": "62c16391299d11386857a8c9"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62c163f32791f81ddccbf8a7"
+  },
+  "addressId": {
+    "$oid": "62c15c4a62aea62e848be445"
+  },
+  "totalAmount": 22690000,
+  "items": [
+    {
+      "_id": {
+        "$oid": "62c163f32791f81ddccbf8a8"
+      },
+      "productId": {
+        "$oid": "621e221306feca17dc76efff"
+      },
+      "purchasedQty": 1
+    }
+  ],
+  "paymentStatus": "pending",
+  "paymentType": "cod",
+  "user": {
+    "$oid": "622387a8aa16cb358c2e4ad6"
+  },
+  "orderStatus": [
+    {
+      "type": "ordered",
+      "isCompleted": true,
+      "_id": {
+        "$oid": "62c163f32791f81ddccbf8a9"
+      },
+      "date": {
+        "$date": {
+          "$numberLong": "1656841203556"
+        }
+      }
+    },
+    {
+      "type": "packed",
+      "isCompleted": false,
+      "_id": {
+        "$oid": "62c163f32791f81ddccbf8aa"
+      }
+    },
+    {
+      "type": "shipped",
+      "isCompleted": false,
+      "_id": {
+        "$oid": "62c163f32791f81ddccbf8ab"
+      }
+    },
+    {
+      "type": "delivered",
+      "isCompleted": false,
+      "_id": {
+        "$oid": "62c163f32791f81ddccbf8ac"
+      }
+    }
+  ],
+  "__v": 0
+}]

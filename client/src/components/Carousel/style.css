@@ -1,0 +1,19 @@
+.carousel-indicators li {
+  padding-top: 20px;
+  background-color: #999;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+.carousel-inner {
+  margin-bottom: 50px;
+}
+.carousel-indicators {
+    background-color: black;    
+}
+.banner_category{
+    position: relative;
+}
+

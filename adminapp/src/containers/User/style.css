@@ -1,0 +1,203 @@
+.user__app-wrap {
+    margin-top: 50px;
+}
+
+.manage__user-wrap {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.manage__user-main-title {
+    font-size: 22px;
+}
+
+.manage__user-main-wrap {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 22px 50px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.manage__user-main-id,
+.manage__user-main-account,
+.manage__user-main-pass,
+.manage__user-main-date,
+.manage__user-main-operate {
+    font-size: 18px;
+    text-align: center;
+}
+
+.manage__user-main-id {
+    width: calc(6% - 10px);
+    margin-right: 10px;
+}
+
+.manage__user-main-account,
+.manage__user-main-pass {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+}
+
+.manage__user-main-date {
+    width: calc(14% - 10px);
+    margin-right: 10px;
+}
+
+.manage__user-main-operate {
+    width: 20%;
+}
+
+.manage__user-info-item {
+    display: inline;
+    align-items: center;
+    padding: 17px 50px 17px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.check__select-item-wrap {
+    width: 50px;
+    text-align: center;
+    display: flex;
+}
+
+.select-item-icon {
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+
+.no_active__check-item i {
+    position: relative;
+    color: rgb(55, 182, 255);
+    font-size: 17px;
+}
+.manage__user-detail{
+    padding-left: 100px;
+    display: flex;
+}
+.manage__user-main-operate-all-wrap {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 50px);
+}
+
+.manage__user-main-id-detail,
+.manage__user-main-account-detail,
+.manage__user-main-pass-detail,
+.manage__user-main-date-detail,
+.manage__user-main-operate-wrap {
+    font-size: 16px;
+    text-align: center;
+    padding-left: 35px;
+}
+
+.manage__user-main-id-detail {
+    width: calc(6% - 10px);
+    margin-right: 10px;
+    padding-left: 70px;
+}
+
+.manage__user-main-account-detail,
+.manage__user-main-pass-detail {
+    width: calc(30% - 10px);
+    margin-right: 10px;
+    padding-left: 70px;
+}
+
+.manage__user-main-date-detail {
+    width: calc(14% - 10px);
+    margin-right: 10px;
+}
+
+.manage__user-main-operate-wrap {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manage__user-main-disable {
+    cursor: pointer;
+    color: blue;
+    margin-right: 15px;
+}
+
+.manage__user-main-delete {
+    cursor: pointer;
+    color: red;
+}
+
+.nav__btn-and-change-page {
+    display: flex;
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.nav__manage-user-btn,
+.nav__change-page-user {
+    display: flex;
+    align-self: center;
+}
+
+.btn__manage-user-disable,
+.btn__manage-user-delete {
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: rgba(55, 182, 255, 0.8);
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn__manage-user-disable:hover,
+.btn__manage-user-disable:focus {
+    outline: none;
+    background-color: rgba(55, 182, 255, 1);
+}
+
+.btn__manage-user-delete {
+    background-color: rgba(245, 31, 42, 0.7);
+}
+
+.btn__manage-user-delete:hover,
+.btn__manage-user-delete:focus {
+    background-color: rgba(245, 31, 42, 0.9);
+    outline: none;
+}
+
+.nav__change-page-user-item,
+.nav__change-page-user-item-active {
+    padding: 5px 15px;
+    margin-left: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.nav__change-page-user-item:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.nav__change-page-user-item-active {
+    background-color: rgba(55, 182, 255, 0.8);
+    color: white;
+}
+
+.nav__change-page-user-item-active:hover {
+    background-color: rgba(55, 182, 255, 1);
+}

@@ -1,0 +1,852 @@
+.orderTrack{
+    width: 500px;
+    display: flex;
+}
+.orderStatus{
+    width: 33.33%;
+    height: 5px;
+    background: #777;
+    position: relative;
+    font-size: 12px;
+}
+.orderStatus.active{
+    background: #26A541;
+}
+.orderStatus:last-child{
+    width: 0;
+}
+.orderStatus .point{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 8px;
+    background-color: #777;
+    top: -5px;
+}
+.orderStatus .point.active{
+    background-color: #26A541;
+}
+.orderInfo{
+    width: max-content;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: -26px;
+    transform: translateX(-50%);
+}
+
+.title{
+    font-size: 14px;
+    font-weight: 600;
+}
+.value{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.orders__app-wrap {
+    margin-top: 50px;
+}
+
+.orders__unconfirm {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.orders__unconfirm-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* CSS orders__unconfirm-title-wrap */
+.orders__unconfirm-title-wrap {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.orders__unconfirm-id,
+.orders__unconfirm-code,
+.orders__unconfirm-sum-price,
+.orders__unconfirm-status,
+.orders__unconfirm-operate {
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+
+.orders__unconfirm-id {
+    width: 6%;
+    margin-right: 10px;
+}
+
+.orders__unconfirm-code {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.orders__unconfirm-sum-price {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.orders__unconfirm-status {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.orders__unconfirm-operate {
+    width: 24%;
+}
+
+/* CSS row */
+.orders__unconfirm-info-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.orders__unconfirm-select {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.check__select-item-icon-unconfirm {
+    position: relative;
+    width: 15.6px;
+    height: 15.6px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    left: 20px;
+    cursor: pointer;
+}
+
+.no_active__check-item-unconfirm {
+    display: none;
+}
+
+.no_active__check-item-unconfirm i {
+    position: relative;
+    color: rgb(55, 182, 255);
+    font-size: 17.2px;
+    left: 5px;
+    top: 1px;
+    cursor: pointer;
+}
+
+.active__check-item {
+    display: block;
+}
+
+.orders__unconfirm-properties {
+    width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+}
+
+.orders__unconfirm-id-detail {
+    width: 6%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.orders__unconfirm-code-detail {
+    width: 30%;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.orders__unconfirm-code-detail:hover {
+    color: rgb(55, 182, 255);
+}
+
+.orders__unconfirm-sum-price-detail {
+    width: 15%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.orders__unconfirm-status-detail {
+    width: 25%;
+    text-align: center;
+    margin-right: 10px;
+    color: rgb(89, 148, 30);
+}
+
+.orders__unconfirm-operate-wrap {
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orders__unconfirm-btn-confirm,
+.orders__unconfirm-btn-cancel {
+    margin-right: 10px;
+    padding: 0px 10px;
+    cursor: pointer;
+    color: rgb(0, 153, 255);
+    font-weight: 500;
+}
+
+.orders__unconfirm-btn-cancel {
+    color: rgb(252, 52, 25);
+}
+
+/* nav__btn-and-change-page */
+.nav__btn-and-change-page {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__btn-wrap-orders,
+.nav__change-page-unconfirm {
+    display: flex;
+    align-items: center;
+}
+
+.btn__orders-confirm,
+.btn__orders-cancel {
+    border-radius: 3px;
+    width: 160px;
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(55, 182, 255, 0.8);
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn__orders-confirm:focus,
+.btn__orders-confirm:hover {
+    outline: none;
+    background-color: rgba(55, 182, 255, 1);
+}
+
+.btn__orders-cancel {
+    background-color: rgba(245, 31, 42, 0.7);
+}
+
+.btn__orders-cancel:hover,
+.btn__orders-cancel:focus {
+    background-color: rgba(245, 31, 42, 0.8);
+    outline: none;
+}
+
+/* CSS chuyển trang */
+.change-page-unconfirm-item {
+    padding: 5px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    margin-left: 15px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.change-page-unconfirm-item:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.change-page-unconfirm-item-active {
+    background-color: rgba(55, 182, 255, 0.87) !important;
+    color: white;
+}
+
+.change-page-unconfirm-item-active:hover {
+    background-color: rgba(55, 182, 255, 1) !important;
+}
+
+/* CSS orders__prepare*/
+.orders__prepare {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.orders__prepare-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.orders__prepare-title-wrap {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.orders__prepare-id,
+.orders__prepare-code,
+.orders__prepare-sum-price,
+.orders__prepare-status,
+.orders__prepare-operate {
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+
+.orders__prepare-id {
+    width: 6%;
+    margin-right: 10px;
+}
+
+.orders__prepare-code {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.orders__prepare-sum-price {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.orders__prepare-status {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.orders__prepare-operate {
+    width: 24%;
+}
+
+/* CSS row  orders__prepare*/
+.orders__prepare-info-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.orders__prepare-select {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.check__select-item-icon-prepare {
+    position: relative;
+    width: 15.6px;
+    height: 15.6px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    left: 20px;
+    cursor: pointer;
+}
+
+.no_active__check-item-prepare {
+    display: none;
+}
+
+.no_active__check-item-prepare i {
+    position: relative;
+    color: rgb(55, 182, 255);
+    font-size: 17.2px;
+    left: 5px;
+    top: 1px;
+    cursor: pointer;
+}
+
+.active__check-item {
+    display: block;
+}
+
+.orders__prepare-properties {
+    width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+}
+
+.orders__prepare-id-detail {
+    width: 6%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.orders__prepare-code-detail {
+    width: 30%;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.orders__prepare-code-detail:hover {
+    color: rgb(55, 182, 255);
+}
+
+.orders__prepare-sum-price-detail {
+    width: 15%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.orders__prepare-status-detail {
+    width: 25%;
+    text-align: center;
+    margin-right: 10px;
+    color: rgb(89, 148, 30);
+}
+
+.orders__prepare-operate-wrap {
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orders__prepare-btn-confirm,
+.orders__prepare-btn-cancel {
+    margin-right: 10px;
+    padding: 0px 10px;
+    cursor: pointer;
+    color: rgb(0, 153, 255);
+    font-weight: 500;
+}
+
+.orders__prepare-btn-cancel {
+    color: rgb(252, 52, 25);
+}
+
+/* nav__btn-and-change-page orders__prepare */
+.nav__btn-and-change-page-prepare {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__btn-wrap-orders-prepare,
+.nav__change-page-prepare {
+    display: flex;
+    align-items: center;
+}
+
+.btn__orders-confirm-prepare,
+.btn__orders-cancel-prepare {
+    border-radius: 3px;
+    width: 160px;
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(55, 182, 255, 0.8);
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn__orders-confirm-prepare:focus,
+.btn__orders-confirm-prepare:hover {
+    outline: none;
+    background-color: rgba(55, 182, 255, 1);
+}
+
+.btn__orders-cancel-prepare {
+    background-color: rgba(245, 31, 42, 0.7);
+}
+
+.btn__orders-cancel-prepare:hover,
+.btn__orders-cancel-prepare:focus {
+    background-color: rgba(245, 31, 42, 0.8);
+    outline: none;
+}
+
+/* CSS chuyển trang orders__prepare*/
+.change-page-prepare-item {
+    padding: 5px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    margin-left: 15px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.change-page-prepare-item:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.change-page-prepare-item-active {
+    background-color: rgba(55, 182, 255, 0.87) !important;
+    color: white;
+}
+
+.change-page-prepare-item-active:hover {
+    background-color: rgba(55, 182, 255, 1) !important;
+}
+
+/* CSS orders__delivery */
+.orders__delivery {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.orders__delivery-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.orders__delivery-title-wrap {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.orders__delivery-id,
+.orders__delivery-code,
+.orders__delivery-sum-price,
+.orders__delivery-status,
+.orders__delivery-operate {
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+
+.orders__delivery-id {
+    width: 6%;
+    margin-right: 10px;
+}
+
+.orders__delivery-code {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.orders__delivery-sum-price {
+    width: 15%;
+    margin-right: 10px;
+}
+
+.orders__delivery-status {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.orders__delivery-operate {
+    width: 24%;
+}
+
+/* CSS row  orders__delivery*/
+.orders__delivery-info-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.orders__delivery-select {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.check__select-item-icon-delivery {
+    position: relative;
+    width: 15.6px;
+    height: 15.6px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    left: 20px;
+    cursor: pointer;
+}
+
+.no_active__check-item-delivery {
+    display: none;
+}
+
+.no_active__check-item-delivery i {
+    position: relative;
+    color: rgb(55, 182, 255);
+    font-size: 17.2px;
+    left: 5px;
+    top: 1px;
+    cursor: pointer;
+}
+
+.active__check-item {
+    display: block;
+}
+
+.orders__delivery-properties {
+    width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+}
+
+.orders__delivery-id-detail {
+    width: 6%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.orders__delivery-code-detail {
+    width: 30%;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.orders__delivery-code-detail:hover {
+    color: rgb(55, 182, 255);
+}
+
+.orders__delivery-sum-price-detail {
+    width: 15%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.orders__delivery-status-detail {
+    width: 25%;
+    text-align: center;
+    margin-right: 10px;
+    color: rgb(89, 148, 30);
+}
+
+.orders__delivery-btn-confirm {
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(0, 153, 255);
+    padding: 0px 10px;
+    margin-right: 10px;
+}
+
+/* nav__btn-and-change-page orders__delivery */
+.nav__btn-and-change-page-delivery {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__btn-wrap-orders-delivery,
+.nav__change-page-delivery {
+    display: flex;
+    align-items: center;
+}
+
+.btn__orders-confirm-delivery {
+    border-radius: 3px;
+    width: 160px;
+    padding: 5px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(55, 182, 255, 0.8);
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn__orders-confirm-delivery:focus,
+.btn__orders-confirm-delivery:hover {
+    outline: none;
+    background-color: rgba(55, 182, 255, 1);
+}
+
+/* CSS chuyển trang orders__delivery*/
+.change-page-delivery-item {
+    padding: 5px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    margin-left: 15px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.change-page-delivery-item:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.change-page-delivery-item-active {
+    background-color: rgba(55, 182, 255, 0.87) !important;
+    color: white;
+}
+
+.change-page-delivery-item-active:hover {
+    background-color: rgba(55, 182, 255, 1) !important;
+}
+
+/* CSS orders__success */
+.orders__success,
+.orders__cancel {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.orders__cancel {
+    margin-bottom: 50px;
+}
+
+.orders__success-title,
+.orders__cancel-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.orders__success-title-wrap,
+.orders__cancel-title-wrap {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.orders__success-id,
+.orders__success-code,
+.orders__success-sum-price,
+.orders__success-status,
+.orders__cancel-id,
+.orders__cancel-code,
+.orders__cancel-sum-price,
+.orders__cancel-status {
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+
+.orders__success-id,
+.orders__cancel-id {
+    width: 10%;
+    margin-right: 10px;
+}
+
+.orders__success-code,
+.orders__cancel-code {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.orders__success-sum-price,
+.orders__cancel-sum-price {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.orders__success-status,
+.orders__cancel-status {
+    width: 25%;
+}
+
+/* CSS orders__success-info-item */
+.orders__success-info-item,
+.orders__cancel-info-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.orders__success-id-detail,
+.orders__cancel-id-detail {
+    width: 10%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.orders__success-code-detail,
+.orders__cancel-code-detail {
+    width: 40%;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.orders__success-code-detail:hover,
+.orders__cancel-code-detail:hover {
+    color: rgb(55, 182, 255);
+}
+
+.orders__success-sum-price-detail,
+.orders__cancel-sum-price-detail {
+    width: 25%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.orders__success-status-detail,
+.orders__cancel-status-detail {
+    width: 25%;
+    text-align: center;
+    color: rgb(89, 148, 30);
+}
+
+.orders__cancel-status-detail {
+    color: rgb(255, 73, 73);
+}
+
+.nav__change-page-success,
+.nav__change-page-cancel {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change-page-success-item,
+.change-page-cancel-item {
+    margin-left: 15px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background-color: rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.change-page-success-item:hover,
+.change-page-cancel-item:hover {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+
+.change-page-success-item-active,
+.change-page-cancel-item-active {
+    background-color: rgba(55, 182, 255, 0.8);
+    color: white;
+}
+
+.change-page-success-item-active:hover,
+.change-page-cancel-item-active:hover {
+    background-color: rgba(55, 182, 255, 1);
+}
+

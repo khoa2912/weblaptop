@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "621e16ec06feca17dc76ef5b"
+  },
+  "role": "admin",
+  "firstName": "van",
+  "lastName": "truong",
+  "email": "truon@info.com",
+  "hash_password": "$2b$10$/2pF0l.O/DOx.tWa1zrpeO1djaJS.LK6giLPhOnIqfGH5P1ptFYn6",
+  "userName": "iiijrutlh",
+  "__v": 0,
+  "status": "enable"
+},{
+  "_id": {
+    "$oid": "622387a8aa16cb358c2e4ad6"
+  },
+  "role": "user",
+  "firstName": "van",
+  "lastName": "Truong",
+  "email": "povoma1007@vapaka.com",
+  "hash_password": "$2b$10$wR7BFYE8Kr2xIFgdgoeejewGrkFZScuKcBw/UmPtjeeQSyW64be.6",
+  "userName": "d8y_2oiic",
+  "__v": 0,
+  "status": "enable"
+},{
+  "_id": {
+    "$oid": "622817f4facdc73148195dcb"
+  },
+  "role": "user",
+  "firstName": "Trường",
+  "lastName": "Hồ Văn",
+  "email": "vt332141@gmail.com",
+  "hash_password": "$2b$12$Enlc1sAwud5bzIio9Nzwl.bGkke27.OSwoqlpYk6j9M2Pu00./VCy",
+  "userName": "hcze8r_4a",
+  "__v": 0,
+  "status": "enable"
+},{
+  "_id": {
+    "$oid": "622876ba63b1930370355436"
+  },
+  "role": "user",
+  "firstName": "Trường",
+  "lastName": "HồVăn",
+  "email": "anhlaanh123012@gmail.com",
+  "hash_password": "$2b$12$tTLQ35zmb1bOll7AYeAjj.zH/OWA7RGS7XJ0/lX3cbcsHGcuhT9/e",
+  "userName": "8vnpqfone",
+  "__v": 0,
+  "status": "enable"
+}]

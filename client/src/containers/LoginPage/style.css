@@ -1,0 +1,48 @@
+.Container_form_login {
+  width: 600px;
+  margin: 130px auto 0;
+  padding: 50px;
+  background-color: aliceblue;
+}
+
+.socials__icons--facebook {
+  padding-top: 10px;
+  color: black;
+  height: 43px;
+}
+.btnFacebook{
+    width: 220px;
+    height:41px;  
+    border-radius: 4px;
+    background: #3b5998;
+    color:white;
+    border:0px transparent;  
+    text-align: center;
+    margin:5px;
+    display: inline-block;
+  }
+
+  .btnGoogle { 
+    margin:5px;
+    width: 220px;
+    height:41px;
+    border-radius: 4px;
+    background: #db3236;
+    color:white;
+    border:0px transparent;
+    text-align: center;
+  }
+  .btnFacebook:hover {
+    background: #3b5998;
+    opacity: 0.6;
+  }
+  .btnGoogle:hover {
+    background: #db3236;
+    opacity: 0.6;
+  }
+  
+  @media only screen and (max-width : 399px) {
+    .btnFacebook,.btnGoogle{
+      width: 100%
+    }
+  }

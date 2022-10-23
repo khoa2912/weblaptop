@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "62c10af1ffa132de488275ef"
+  },
+  "user": {
+    "$oid": "622387a8aa16cb358c2e4ad6"
+  },
+  "__v": 0,
+  "address": [
+    {
+      "_id": {
+        "$oid": "62c10af10178792e90bb4a04"
+      },
+      "name": "Hồ Văn Trường",
+      "mobileNumber": "0356105728",
+      "address": "đội 5, hợp tác xã",
+      "provinceID": "262",
+      "provinceName": "Bình Định",
+      "districtID": "2023",
+      "districtName": "Huyện Tuy Phước",
+      "wardID": "371107",
+      "wardName": "Xã Phước Lộc"
+    },
+    {
+      "_id": {
+        "$oid": "62c15b7e62aea62e848be439"
+      },
+      "name": "Trần Thanh Trợt",
+      "mobileNumber": "0878404611",
+      "address": "Cầu ông dầu",
+      "provinceID": "262",
+      "provinceName": "Bình Định",
+      "districtID": "2023",
+      "districtName": "Huyện Tuy Phước",
+      "wardID": "371110",
+      "wardName": "Xã Phước Sơn"
+    },
+    {
+      "_id": {
+        "$oid": "62c15c4a62aea62e848be445"
+      },
+      "name": "Trần Trọc",
+      "mobileNumber": "0989643734",
+      "address": "30 Nguyễn Huệ",
+      "provinceID": "262",
+      "provinceName": "Bình Định",
+      "districtID": "2023",
+      "districtName": "Huyện Tuy Phước",
+      "wardID": "371107",
+      "wardName": "Xã Phước Lộc"
+    }
+  ]
+}]

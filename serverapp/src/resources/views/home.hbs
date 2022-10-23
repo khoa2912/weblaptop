@@ -1,0 +1,27 @@
+<div class='mt-4'>
+    <div class='row'>
+
+        {{#each phones}}
+            <div class='col-sm-6 col-lg-4'>
+                <div class='card' style='width: 18rem;'>
+                    <a href='/phone/{{this.slug}}'>
+                        <img
+                            src='{{this.image}}'
+                            class='card-img-top'
+                            alt='...'
+                        />
+                    </a>
+                    <div class='card-body'>
+                        <a href='/phone/{{this.slug}}'>
+                            <h5 class='card-title'>{{this.ten}}</h5>s
+                        </a>
+                        <p class='card-text'>{{this.chitiet}}</p>
+                        <h5 class='card-gia'>{{this.gia}} VND</h5>
+                        <a href='#' class='btn btn-primary'>Mua Điện Thoại</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+
+    </div>
+</div>

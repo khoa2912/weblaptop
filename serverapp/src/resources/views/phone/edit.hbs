@@ -1,0 +1,56 @@
+<div class='mt-4'>
+    <h3>Cập Nhật Điện Thoại</h3>
+    <form class='mt-4' method='POST' action='/phone/{{phone._id}}?_method=PUT'>
+        <div class='mb-3'>
+            <label for='ten' class='form-label'>Tên Điện Thoại</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{phone.ten}}'
+                id='ten'
+                name='ten'
+            />
+        </div>
+        <div class='mb-3'>
+            <label for='gia' class='form-label'>Giá Điện Thoại</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{phone.gia}}'
+                id='gia'
+                name='gia'
+            />
+        </div>
+        <div class='mb-3'>
+            <label for='image' class='form-label'>Link Hình Ảnh</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{phone.image}}'
+                id='image'
+                name='image'
+            />
+        </div>
+        <div class='mb-3'>
+            <label for='videoId' class='form-label'>Id Video</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{phone.videoId}}'
+                id='videoId'
+                name='videoId'
+            />
+        </div>
+        <div class='mb-3'>
+            <label for='chitiet' class='form-label'>Mô Tả Chi Tiết</label>
+            <input
+                type='text'
+                class='form-control'
+                value='{{phone.chitiet}}'
+                id='chitiet'
+                name='chitiet'
+            />
+        </div>
+        <button type='submit' class='btn btn-primary'>Lưu Lại</button>
+    </form>
+</div>
